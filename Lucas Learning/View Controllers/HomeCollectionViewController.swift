@@ -10,15 +10,15 @@ import UIKit
 class HomeCollectionViewController: UICollectionViewController, UICollectionViewDelegateFlowLayout {
     
     private var arrayFeatures: [Feature] = [
-        Feature(name: "Alphabet", desc: "Listen to the letters in the alphabet.", icon: UIImage(systemName: "abc")!),
-        Feature(name: "Typing", desc: "Listen to the letters in the alphabet.", icon: UIImage(systemName: "keyboard")!)
+        Feature(name: "Alphabet", desc: "Listen to the letters in the alphabet.", icon: UIImage(systemName: "abc")!, colorTheme: .orange),
+        Feature(name: "Typing", desc: "Listen to the letters in the alphabet.", icon: UIImage(systemName: "keyboard")!, colorTheme: .brown),
+        Feature(name: "Numbers", desc: "Listen to the letters in the alphabet.", icon: UIImage(systemName: "number")!, colorTheme: .darkGray)
     ]
     
     @IBOutlet var featuresCollectionView: UICollectionView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        print("viewload")
     }
     
     // MARK: - UICollectionViewDataSource
@@ -33,8 +33,16 @@ class HomeCollectionViewController: UICollectionViewController, UICollectionView
         featureCollectionViewCell.layer.cornerRadius = 8
         featureCollectionViewCell.featureNameLabel.text = feature.name
         featureCollectionViewCell.iconImageView.image = feature.icon
+        featureCollectionViewCell.backgroundColor = feature.colorTheme
         return featureCollectionViewCell
     }
+    
+    override func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        print("Selected item at \(indexPath.row)")
+        
+    }
+    
+    // MARK: - UICollectionViewDelegateFlowLayout
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         let width = collectionView.bounds.width - 25
@@ -43,6 +51,10 @@ class HomeCollectionViewController: UICollectionViewController, UICollectionView
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, insetForSectionAt section: Int) -> UIEdgeInsets {
         return UIEdgeInsets(top: 8, left: 4, bottom: 8, right: 4)
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumInteritemSpacingForSectionAt section: Int) -> CGFloat {
+        return 8
     }
 }
 

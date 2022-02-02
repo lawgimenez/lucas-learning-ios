@@ -12,6 +12,7 @@
 		8A031F5B275268550014D43C /* NumberCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A031F5A275268550014D43C /* NumberCollectionViewCell.swift */; };
 		8A0FC13C27AA832900D67195 /* HomeCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A0FC13B27AA832900D67195 /* HomeCollectionViewController.swift */; };
 		8A0FC13E27AA847500D67195 /* Feature.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A0FC13D27AA847500D67195 /* Feature.swift */; };
+		8A0FC14027AA8F6A00D67195 /* FeatureCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A0FC13F27AA8F6900D67195 /* FeatureCollectionViewCell.swift */; };
 		8A3521F527533497007DFFC1 /* CallViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A3521F427533497007DFFC1 /* CallViewController.swift */; };
 		8A3521F727533586007DFFC1 /* CallCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A3521F627533586007DFFC1 /* CallCollectionViewCell.swift */; };
 		8A3521FA275336BB007DFFC1 /* Contact.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A3521F9275336BB007DFFC1 /* Contact.swift */; };
@@ -51,6 +52,7 @@
 		8A031F5A275268550014D43C /* NumberCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NumberCollectionViewCell.swift; sourceTree = "<group>"; };
 		8A0FC13B27AA832900D67195 /* HomeCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeCollectionViewController.swift; sourceTree = "<group>"; };
 		8A0FC13D27AA847500D67195 /* Feature.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Feature.swift; sourceTree = "<group>"; };
+		8A0FC13F27AA8F6900D67195 /* FeatureCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeatureCollectionViewCell.swift; sourceTree = "<group>"; };
 		8A3521F427533497007DFFC1 /* CallViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CallViewController.swift; sourceTree = "<group>"; };
 		8A3521F627533586007DFFC1 /* CallCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CallCollectionViewCell.swift; sourceTree = "<group>"; };
 		8A3521F9275336BB007DFFC1 /* Contact.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Contact.swift; sourceTree = "<group>"; };
@@ -102,6 +104,7 @@
 				8A031F56275261C10014D43C /* LetterCollectionViewCell.swift */,
 				8A031F5A275268550014D43C /* NumberCollectionViewCell.swift */,
 				8A3521F627533586007DFFC1 /* CallCollectionViewCell.swift */,
+				8A0FC13F27AA8F6900D67195 /* FeatureCollectionViewCell.swift */,
 			);
 			path = Customs;
 			sourceTree = "<group>";
@@ -319,6 +322,7 @@
 				8A3521F527533497007DFFC1 /* CallViewController.swift in Sources */,
 				8A031F57275261C10014D43C /* LetterCollectionViewCell.swift in Sources */,
 				8A3521FA275336BB007DFFC1 /* Contact.swift in Sources */,
+				8A0FC14027AA8F6A00D67195 /* FeatureCollectionViewCell.swift in Sources */,
 				8ACD5B0D27525D890068AB70 /* AppDelegate.swift in Sources */,
 				8A031F59275267EB0014D43C /* NumbersViewController.swift in Sources */,
 				8A0FC13C27AA832900D67195 /* HomeCollectionViewController.swift in Sources */,

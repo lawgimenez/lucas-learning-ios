@@ -48,12 +48,20 @@ extension AlphabetViewController: UICollectionViewDataSource {
 extension AlphabetViewController: UICollectionViewDelegate {
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        let letterCollectionViewCell = collectionView.dequeueReusableCell(withReuseIdentifier: "letter", for: indexPath) as! LetterCollectionViewCell
+        letterCollectionViewCell.backgroundColor = .brown
         let letter = arrayLetters[indexPath.row]
         let utterance = AVSpeechUtterance(string: letter.lowercased())
         utterance.voice = AVSpeechSynthesisVoice(language: "en-US")
         utterance.rate = 0.5
         let synthesizer = AVSpeechSynthesizer()
+        synthesizer.delegate = self
         synthesizer.speak(utterance)
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, didDeselectItemAt indexPath: IndexPath) {
+        let letterCollectionViewCell = collectionView.dequeueReusableCell(withReuseIdentifier: "letter", for: indexPath) as! LetterCollectionViewCell
+        letterCollectionViewCell.backgroundColor = .orange
     }
 }
 
@@ -62,5 +70,12 @@ extension AlphabetViewController: UICollectionViewDelegateFlowLayout {
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         let width = collectionView.bounds.width - 25
         return CGSize(width: width / 5, height: 100)
+    }
+}
+
+extension AlphabetViewController: AVSpeechSynthesizerDelegate {
+    
+    func speechSynthesizer(_ synthesizer: AVSpeechSynthesizer, didFinish utterance: AVSpeechUtterance) {
+        alphabetCollectionView.reloadData()
     }
 }

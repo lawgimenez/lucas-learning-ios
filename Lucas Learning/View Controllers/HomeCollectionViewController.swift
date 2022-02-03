@@ -9,13 +9,13 @@ import UIKit
 
 class HomeCollectionViewController: UICollectionViewController, UICollectionViewDelegateFlowLayout {
     
+    @IBOutlet var featuresCollectionView: UICollectionView!
+    
     private var arrayFeatures: [Feature] = [
         Feature(name: "Alphabet", desc: "Listen to the letters in the alphabet.", icon: UIImage(systemName: "abc")!, colorTheme: .orange),
         Feature(name: "Typing", desc: "Listen to the letters in the alphabet.", icon: UIImage(systemName: "keyboard")!, colorTheme: .brown),
         Feature(name: "Numbers", desc: "Listen to the letters in the alphabet.", icon: UIImage(systemName: "number")!, colorTheme: .darkGray)
     ]
-    
-    @IBOutlet var featuresCollectionView: UICollectionView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -38,8 +38,14 @@ class HomeCollectionViewController: UICollectionViewController, UICollectionView
     }
     
     override func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        print("Selected item at \(indexPath.row)")
-        
+        if indexPath.row == 0 {
+            // Open alphabet letters
+            let alphabetViewController = storyboard?.instantiateViewController(withIdentifier: "alphabet") as! AlphabetViewController
+            navigationController?.pushViewController(alphabetViewController, animated: true)
+        } else if indexPath.row == 2 {
+            let numbersViewController = storyboard?.instantiateViewController(withIdentifier: "numbers") as! NumbersViewController
+            navigationController?.pushViewController(numbersViewController, animated: true)
+        }
     }
     
     // MARK: - UICollectionViewDelegateFlowLayout

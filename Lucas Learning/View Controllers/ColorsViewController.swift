@@ -20,9 +20,9 @@ class ColorsViewController: UIViewController {
         Color(name: "Orange", color: UIColor(red: 1, green: 0.5, blue: 0, alpha: 1)),
         Color(name: "Black", color: UIColor(red: 0, green: 0, blue: 0, alpha: 1)),
         Color(name: "Brown", color: UIColor(red: 0.6, green: 0.4, blue: 0.2, alpha: 1)),
-        Color(name: "Cyan", color: UIColor(red: 1, green: 1, blue: 1, alpha: 1)),
+        Color(name: "Cyan", color: .cyan),
         Color(name: "Magenta", color: UIColor(red: 1, green: 0, blue: 1, alpha: 1)),
-        Color(name: "Purple", color: UIColor(red: 0.5, green: 1, blue: 0.5, alpha: 1)),
+        Color(name: "Purple", color: .purple),
         Color(name: "Gray", color: .gray),
         Color(name: "White", color: .white)
     ]

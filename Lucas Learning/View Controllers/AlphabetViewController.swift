@@ -41,6 +41,7 @@ extension AlphabetViewController: UICollectionViewDataSource {
         letterCollectionViewCell.layer.cornerRadius = 8
         letterCollectionViewCell.backgroundColor = colorTheme
         letterCollectionViewCell.letterLabel.text = letter
+        letterCollectionViewCell.letterLabel.textColor = .white
         return letterCollectionViewCell
     }
 }

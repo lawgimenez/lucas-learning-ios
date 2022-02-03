@@ -71,6 +71,10 @@ extension AlphabetViewController: UICollectionViewDelegateFlowLayout {
         let width = collectionView.bounds.width - 25
         return CGSize(width: width / 5, height: 100)
     }
+    
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, insetForSectionAt section: Int) -> UIEdgeInsets {
+        return UIEdgeInsets(top: 8, left: 4, bottom: 8, right: 4)
+    }
 }
 
 extension AlphabetViewController: AVSpeechSynthesizerDelegate {

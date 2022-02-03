@@ -15,7 +15,16 @@ class ColorsViewController: UIViewController {
     private let arrayColors: [Color] = [
         Color(name: "Blue", color: UIColor(red: 0, green: 0, blue: 1, alpha: 1)),
         Color(name: "Red", color: UIColor(red: 1, green: 0, blue: 0, alpha: 1)),
-        Color(name: "Yellow", color: UIColor(red: 1, green: 1, blue: 0, alpha: 1))
+        Color(name: "Yellow", color: UIColor(red: 1, green: 1, blue: 0, alpha: 1)),
+        Color(name: "Green", color: UIColor(red: 0, green: 1, blue: 0, alpha: 1)),
+        Color(name: "Orange", color: UIColor(red: 1, green: 0.5, blue: 0, alpha: 1)),
+        Color(name: "Black", color: UIColor(red: 0, green: 0, blue: 0, alpha: 1)),
+        Color(name: "Brown", color: UIColor(red: 0.6, green: 0.4, blue: 0.2, alpha: 1)),
+        Color(name: "Cyan", color: UIColor(red: 1, green: 1, blue: 1, alpha: 1)),
+        Color(name: "Magenta", color: UIColor(red: 1, green: 0, blue: 1, alpha: 1)),
+        Color(name: "Purple", color: UIColor(red: 0.5, green: 1, blue: 0.5, alpha: 1)),
+        Color(name: "Gray", color: .gray),
+        Color(name: "White", color: .white)
     ]
     
     override func viewDidLoad() {
@@ -34,7 +43,7 @@ extension ColorsViewController: UICollectionViewDataSource {
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let color = arrayColors[indexPath.row]
         let colorCollectionViewCell = collectionView.dequeueReusableCell(withReuseIdentifier: "color", for: indexPath) as! ColorCollectionViewCell
-        colorCollectionViewCell.layer.cornerRadius = 8
+        colorCollectionViewCell.layer.cornerRadius = 20
         colorCollectionViewCell.backgroundColor = color.color
         return colorCollectionViewCell
     }
@@ -57,8 +66,8 @@ extension ColorsViewController: UICollectionViewDelegate {
 extension ColorsViewController: UICollectionViewDelegateFlowLayout {
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-        let width = collectionView.bounds.width - 25
-        return CGSize(width: width / 3, height: 100)
+        let width = collectionView.bounds.width - 15
+        return CGSize(width: width / 5, height: 100)
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, insetForSectionAt section: Int) -> UIEdgeInsets {

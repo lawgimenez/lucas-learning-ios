@@ -46,6 +46,7 @@ class TypingViewController: UIViewController {
         let utterance = AVSpeechUtterance(string: text)
         utterance.voice = AVSpeechSynthesisVoice(language: "en-US")
         utterance.rate = 0.5
+        utterance.pitchMultiplier = 2.5
         let synthesizer = AVSpeechSynthesizer()
         synthesizer.speak(utterance)
     }

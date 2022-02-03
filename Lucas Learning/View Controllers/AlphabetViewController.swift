@@ -55,6 +55,7 @@ extension AlphabetViewController: UICollectionViewDelegate {
         let utterance = AVSpeechUtterance(string: letter.lowercased())
         utterance.voice = AVSpeechSynthesisVoice(language: "en-US")
         utterance.rate = 0.5
+        utterance.pitchMultiplier = 2.5
         let synthesizer = AVSpeechSynthesizer()
         synthesizer.delegate = self
         synthesizer.speak(utterance)

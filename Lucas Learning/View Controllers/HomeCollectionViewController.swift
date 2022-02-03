@@ -41,6 +41,7 @@ class HomeCollectionViewController: UICollectionViewController, UICollectionView
         if indexPath.row == 0 {
             // Open alphabet letters
             let alphabetViewController = storyboard?.instantiateViewController(withIdentifier: "alphabet") as! AlphabetViewController
+            alphabetViewController.colorTheme = .orange
             navigationController?.pushViewController(alphabetViewController, animated: true)
         } else if indexPath.row == 2 {
             let numbersViewController = storyboard?.instantiateViewController(withIdentifier: "numbers") as! NumbersViewController

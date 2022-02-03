@@ -20,6 +20,7 @@ class AlphabetViewController: UIViewController {
         "U", "V", "W", "X",
         "Y", "Z"
     ]
+    var colorTheme: UIColor = .orange
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -37,6 +38,8 @@ extension AlphabetViewController: UICollectionViewDataSource {
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let letter = arrayLetters[indexPath.row]
         let letterCollectionViewCell = collectionView.dequeueReusableCell(withReuseIdentifier: "letter", for: indexPath) as! LetterCollectionViewCell
+        letterCollectionViewCell.layer.cornerRadius = 8
+        letterCollectionViewCell.backgroundColor = colorTheme
         letterCollectionViewCell.letterLabel.text = letter
         return letterCollectionViewCell
     }
@@ -51,5 +54,13 @@ extension AlphabetViewController: UICollectionViewDelegate {
         utterance.rate = 0.5
         let synthesizer = AVSpeechSynthesizer()
         synthesizer.speak(utterance)
+    }
+}
+
+extension AlphabetViewController: UICollectionViewDelegateFlowLayout {
+    
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
+        let width = collectionView.bounds.width - 25
+        return CGSize(width: width / 5, height: 100)
     }
 }

@@ -17,6 +17,7 @@ class TypingViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         inputTextView.becomeFirstResponder()
+        inputTextView.textContainerInset = UIEdgeInsets(top: 14, left: 8, bottom: 14, right: 8)
         inputTextView.layer.cornerRadius = 6
         clearButton.layer.cornerRadius = 6
         speakButton.layer.cornerRadius = 6

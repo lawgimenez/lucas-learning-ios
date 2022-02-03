@@ -14,7 +14,8 @@ class HomeCollectionViewController: UICollectionViewController, UICollectionView
     private var arrayFeatures: [Feature] = [
         Feature(name: "Alphabet", desc: "Listen to the letters in the alphabet.", icon: UIImage(systemName: "abc")!, colorTheme: .orange),
         Feature(name: "Typing", desc: "Listen to the letters in the alphabet.", icon: UIImage(systemName: "keyboard")!, colorTheme: .brown),
-        Feature(name: "Numbers", desc: "Listen to the letters in the alphabet.", icon: UIImage(systemName: "number")!, colorTheme: .darkGray)
+        Feature(name: "Numbers", desc: "Listen to the letters in the alphabet.", icon: UIImage(systemName: "number")!, colorTheme: .darkGray),
+        Feature(name: "Colors", desc: "Listen to the letters in the alphabet.", icon: UIImage(systemName: "paintpalette.fill")!, colorTheme: .purple)
     ]
     
     override func viewDidLoad() {
@@ -49,6 +50,9 @@ class HomeCollectionViewController: UICollectionViewController, UICollectionView
         } else if indexPath.row == 2 {
             let numbersViewController = storyboard?.instantiateViewController(withIdentifier: "numbers") as! NumbersViewController
             navigationController?.pushViewController(numbersViewController, animated: true)
+        } else if indexPath.row == 3 {
+            let colorsViewController = storyboard?.instantiateViewController(withIdentifier: "colors") as! ColorsViewController
+            navigationController?.pushViewController(colorsViewController, animated: true)
         }
     }
     

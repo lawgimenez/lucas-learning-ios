@@ -87,10 +87,12 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="GFp-RH-y0B">
-                                <rect key="frame" x="0.0" y="44" width="414" height="383"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="GFp-RH-y0B">
+                                <rect key="frame" x="16" y="60" width="382" height="300"/>
+                                <color key="backgroundColor" systemColor="systemGray5Color"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="300" id="6O4-uH-frZ"/>
+                                </constraints>
                                 <color key="textColor" systemColor="labelColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
@@ -138,9 +140,12 @@
                             <constraint firstItem="40M-xv-sGx" firstAttribute="top" secondItem="kh0-uV-oMR" secondAttribute="bottom" constant="12" id="2JP-ac-2ad"/>
                             <constraint firstItem="NDn-H8-eGC" firstAttribute="trailing" secondItem="40M-xv-sGx" secondAttribute="trailing" constant="32" id="ONS-L2-HOd"/>
                             <constraint firstAttribute="bottom" secondItem="40M-xv-sGx" secondAttribute="bottom" constant="32" id="XzR-Zn-C84"/>
+                            <constraint firstItem="NDn-H8-eGC" firstAttribute="trailing" secondItem="GFp-RH-y0B" secondAttribute="trailing" constant="16" id="aeW-tz-Zy3"/>
                             <constraint firstItem="kh0-uV-oMR" firstAttribute="leading" secondItem="NDn-H8-eGC" secondAttribute="leading" constant="32" id="ang-z3-QNp"/>
                             <constraint firstItem="NDn-H8-eGC" firstAttribute="trailing" secondItem="kh0-uV-oMR" secondAttribute="trailing" constant="32" id="gtX-6K-nFQ"/>
                             <constraint firstItem="40M-xv-sGx" firstAttribute="leading" secondItem="NDn-H8-eGC" secondAttribute="leading" constant="32" id="iXJ-jL-bkF"/>
+                            <constraint firstItem="GFp-RH-y0B" firstAttribute="leading" secondItem="NDn-H8-eGC" secondAttribute="leading" constant="16" id="mwW-1D-gC6"/>
+                            <constraint firstItem="GFp-RH-y0B" firstAttribute="top" secondItem="NDn-H8-eGC" secondAttribute="top" constant="16" id="tTG-MN-L1e"/>
                         </constraints>
                     </view>
                     <connections>
@@ -385,6 +390,9 @@
         </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGray5Color">
+            <color red="0.89803921568627454" green="0.89803921568627454" blue="0.91764705882352937" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="systemGreenColor">
             <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>

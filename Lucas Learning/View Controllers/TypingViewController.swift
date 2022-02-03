@@ -17,8 +17,12 @@ class TypingViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         inputTextView.becomeFirstResponder()
+        inputTextView.layer.cornerRadius = 6
         clearButton.layer.cornerRadius = 6
         speakButton.layer.cornerRadius = 6
+        view.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(dismissKeyboard)))
+        let dismissKeyboardBarButtonItem = UIBarButtonItem(image: UIImage(systemName: "keyboard.chevron.compact.down"), style: .plain, target: self, action: #selector(dismissKeyboard))
+        navigationItem.rightBarButtonItem = dismissKeyboardBarButtonItem
     }
     
     @IBAction func clearTapped(_ sender: UIButton) {
@@ -31,6 +35,10 @@ class TypingViewController: UIViewController {
         } else {
             speak(text: "Please type in the input box.")
         }
+    }
+    
+    @objc func dismissKeyboard() {
+        view.endEditing(true)
     }
     
     private func speak(text: String) {

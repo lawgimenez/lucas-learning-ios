@@ -17,6 +17,8 @@ class TypingViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         inputTextView.becomeFirstResponder()
+        clearButton.layer.cornerRadius = 6
+        speakButton.layer.cornerRadius = 6
     }
     
     @IBAction func clearTapped(_ sender: UIButton) {

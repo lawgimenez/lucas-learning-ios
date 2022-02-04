@@ -63,6 +63,7 @@ extension ColorsViewController: UICollectionViewDelegate {
 //        synthesizer.delegate = self
         synthesizer.speak(utterance)
         colorSelectDelegate?.colorSelected(color: color.color)
+        dismiss(animated: true)
     }
 }
 

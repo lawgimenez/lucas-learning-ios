@@ -20,6 +20,7 @@
 		8A51F59A27ABE748002BF56D /* ColorsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A51F59927ABE748002BF56D /* ColorsViewController.swift */; };
 		8A51F59E27ABEB1E002BF56D /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A51F59D27ABEB1E002BF56D /* Color.swift */; };
 		8A51F5A027ABECA1002BF56D /* ColorCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A51F59F27ABECA1002BF56D /* ColorCollectionViewCell.swift */; };
+		8A5AB80427ACBB2D00BD1190 /* DrawingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A5AB80327ACBB2D00BD1190 /* DrawingViewController.swift */; };
 		8ACD5B0D27525D890068AB70 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8ACD5B0C27525D890068AB70 /* AppDelegate.swift */; };
 		8ACD5B0F27525D890068AB70 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8ACD5B0E27525D890068AB70 /* SceneDelegate.swift */; };
 		8ACD5B1127525D890068AB70 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8ACD5B1027525D890068AB70 /* ViewController.swift */; };
@@ -65,6 +66,7 @@
 		8A51F59D27ABEB1E002BF56D /* Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
 		8A51F59F27ABECA1002BF56D /* ColorCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorCollectionViewCell.swift; sourceTree = "<group>"; };
 		8A51F5A127ABF2B9002BF56D /* Lucas Learning.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Lucas Learning.entitlements"; sourceTree = "<group>"; };
+		8A5AB80327ACBB2D00BD1190 /* DrawingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrawingViewController.swift; sourceTree = "<group>"; };
 		8ACD5B0927525D890068AB70 /* Lucas Learning.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Lucas Learning.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8ACD5B0C27525D890068AB70 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8ACD5B0E27525D890068AB70 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -194,6 +196,7 @@
 				8A0FC13B27AA832900D67195 /* HomeCollectionViewController.swift */,
 				8A51F59727AB7005002BF56D /* TypingViewController.swift */,
 				8A51F59927ABE748002BF56D /* ColorsViewController.swift */,
+				8A5AB80327ACBB2D00BD1190 /* DrawingViewController.swift */,
 			);
 			path = "View Controllers";
 			sourceTree = "<group>";
@@ -338,6 +341,7 @@
 				8A51F5A027ABECA1002BF56D /* ColorCollectionViewCell.swift in Sources */,
 				8A3521F527533497007DFFC1 /* CallViewController.swift in Sources */,
 				8A51F59A27ABE748002BF56D /* ColorsViewController.swift in Sources */,
+				8A5AB80427ACBB2D00BD1190 /* DrawingViewController.swift in Sources */,
 				8A031F57275261C10014D43C /* LetterCollectionViewCell.swift in Sources */,
 				8A3521FA275336BB007DFFC1 /* Contact.swift in Sources */,
 				8A0FC14027AA8F6A00D67195 /* FeatureCollectionViewCell.swift in Sources */,

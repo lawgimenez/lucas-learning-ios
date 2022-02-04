@@ -79,6 +79,43 @@
             </objects>
             <point key="canvasLocation" x="1957.9710144927537" y="-617.41071428571422"/>
         </scene>
+        <!--Drawing View Controller-->
+        <scene sceneID="QfI-mR-Vd9">
+            <objects>
+                <viewController storyboardIdentifier="drawing" id="2dG-Kg-lwk" customClass="DrawingViewController" customModule="Lucas_Learning" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="vJh-Gb-KFI">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="5xa-5V-ktu">
+                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="009-9V-1zw">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="862"/>
+                            </imageView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="EEn-X7-YfN"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="5xa-5V-ktu" firstAttribute="leading" secondItem="EEn-X7-YfN" secondAttribute="leading" id="1gT-QC-BPj"/>
+                            <constraint firstItem="5xa-5V-ktu" firstAttribute="trailing" secondItem="EEn-X7-YfN" secondAttribute="trailing" id="5XU-fU-fbL"/>
+                            <constraint firstItem="009-9V-1zw" firstAttribute="trailing" secondItem="EEn-X7-YfN" secondAttribute="trailing" id="OA3-Uh-RNQ"/>
+                            <constraint firstItem="009-9V-1zw" firstAttribute="top" secondItem="vJh-Gb-KFI" secondAttribute="top" id="Qgy-jx-LI4"/>
+                            <constraint firstItem="5xa-5V-ktu" firstAttribute="bottom" secondItem="EEn-X7-YfN" secondAttribute="bottom" id="lte-X1-CPo"/>
+                            <constraint firstItem="EEn-X7-YfN" firstAttribute="bottom" secondItem="009-9V-1zw" secondAttribute="bottom" id="mdh-cz-ZaD"/>
+                            <constraint firstItem="5xa-5V-ktu" firstAttribute="top" secondItem="EEn-X7-YfN" secondAttribute="top" id="vgi-5v-iKc"/>
+                            <constraint firstItem="009-9V-1zw" firstAttribute="leading" secondItem="EEn-X7-YfN" secondAttribute="leading" id="wf8-Pa-lgz"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="mainImageView" destination="5xa-5V-ktu" id="ccG-hh-2rm"/>
+                        <outlet property="tempImageView" destination="009-9V-1zw" id="q8w-n1-P4l"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="5cX-mG-EnL" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1957.9710144927537" y="-1316.5178571428571"/>
+        </scene>
         <!--Colors View Controller-->
         <scene sceneID="Frg-Dg-5od">
             <objects>

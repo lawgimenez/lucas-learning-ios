@@ -44,7 +44,7 @@ class DrawingViewController: UIViewController {
         if !isSwiped {
             drawLine(from: lastPoint, to: lastPoint)
         }
-        UIGraphicsBeginImageContext(mainImageView.frame.size)
+        UIGraphicsBeginImageContext(view.frame.size)
         mainImageView.image?.draw(in: view.bounds, blendMode: .normal, alpha: 1.0)
         tempImageView.image?.draw(in: view.bounds, blendMode: .normal, alpha: opacity)
         mainImageView.image = UIGraphicsGetImageFromCurrentImageContext()

@@ -20,6 +20,30 @@ class DrawingViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        if traitCollection.userInterfaceStyle == .dark {
+            // Dark
+            color = .white
+        } else {
+            color = .black
+        }
+    }
+    
+    override func traitCollectionDidChange(_ previousTraitCollection: UITraitCollection?) {
+        super.traitCollectionDidChange(previousTraitCollection)
+        if #available(iOS 13.0, *) {
+            if traitCollection.hasDifferentColorAppearance(comparedTo: previousTraitCollection) {
+                if traitCollection.userInterfaceStyle == .dark {
+                    // Dark
+                    color = .white
+                }
+                else {
+                    // Light
+                    color = .black
+                }
+            }
+        } else {
+            // Fallback on earlier versions
+        }
     }
     
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {

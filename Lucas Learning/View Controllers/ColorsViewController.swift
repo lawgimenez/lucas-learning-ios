@@ -31,6 +31,7 @@ class ColorsViewController: UIViewController {
         super.viewDidLoad()
         colorsCollectionView.dataSource = self
         colorsCollectionView.delegate = self
+        title = "Colors"
     }
 }
 

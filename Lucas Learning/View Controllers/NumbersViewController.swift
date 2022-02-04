@@ -17,6 +17,7 @@ class NumbersViewController: UIViewController {
         super.viewDidLoad()
         numbersCollectionView.dataSource = self
         numbersCollectionView.delegate = self
+        title = "Numbers"
     }
 }
 

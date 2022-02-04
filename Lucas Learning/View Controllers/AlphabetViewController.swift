@@ -26,6 +26,7 @@ class AlphabetViewController: UIViewController {
         super.viewDidLoad()
         alphabetCollectionView.dataSource = self
         alphabetCollectionView.delegate = self
+        title = "Alphabet"
     }
 }
 

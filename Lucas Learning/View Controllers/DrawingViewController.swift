@@ -26,6 +26,7 @@ class DrawingViewController: UIViewController {
         } else {
             color = .black
         }
+        title = "Drawing"
     }
     
     override func traitCollectionDidChange(_ previousTraitCollection: UITraitCollection?) {

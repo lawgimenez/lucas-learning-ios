@@ -24,6 +24,7 @@ class TypingViewController: UIViewController {
         view.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(dismissKeyboard)))
         let dismissKeyboardBarButtonItem = UIBarButtonItem(image: UIImage(systemName: "keyboard.chevron.compact.down"), style: .plain, target: self, action: #selector(dismissKeyboard))
         navigationItem.rightBarButtonItem = dismissKeyboardBarButtonItem
+        title = "Typing"
     }
     
     @IBAction func clearTapped(_ sender: UIButton) {

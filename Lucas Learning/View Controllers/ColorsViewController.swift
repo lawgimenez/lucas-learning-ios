@@ -11,6 +11,7 @@ import AVFoundation
 class ColorsViewController: UIViewController {
     
     @IBOutlet weak var colorsCollectionView: UICollectionView!
+    var colorSelectDelegate: ColorSelectDelegate?
     
     private let arrayColors: [Color] = [
         Color(name: "Blue", color: UIColor(red: 0, green: 0, blue: 1, alpha: 1)),
@@ -61,6 +62,7 @@ extension ColorsViewController: UICollectionViewDelegate {
         let synthesizer = AVSpeechSynthesizer()
 //        synthesizer.delegate = self
         synthesizer.speak(utterance)
+        colorSelectDelegate?.colorSelected(color: color.color)
     }
 }
 

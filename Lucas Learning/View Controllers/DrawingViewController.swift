@@ -27,6 +27,8 @@ class DrawingViewController: UIViewController {
             color = .black
         }
         title = "Drawing"
+        let selectColorBarButtonItem = UIBarButtonItem(image: UIImage(systemName: "paintpalette"), style: .plain, target: self, action: #selector(selectColor))
+        navigationItem.rightBarButtonItem = selectColorBarButtonItem
     }
     
     override func traitCollectionDidChange(_ previousTraitCollection: UITraitCollection?) {
@@ -93,5 +95,24 @@ class DrawingViewController: UIViewController {
         tempImageView.image = UIGraphicsGetImageFromCurrentImageContext()
         tempImageView.alpha = opacity
         UIGraphicsEndImageContext()
+    }
+    
+    @objc func selectColor() {
+        let colorsViewController = storyboard?.instantiateViewController(withIdentifier: "colors") as! ColorsViewController
+        colorsViewController.modalPresentationStyle = .pageSheet
+        if let sheet = colorsViewController.sheetPresentationController {
+            // 3
+            sheet.detents = [.medium(), .large()]
+            
+        }
+        colorsViewController.colorSelectDelegate = self
+        present(colorsViewController, animated: true)
+    }
+}
+
+extension DrawingViewController: ColorSelectDelegate {
+    
+    func colorSelected(color: UIColor) {
+        self.color = color
     }
 }

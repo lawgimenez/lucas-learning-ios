@@ -21,6 +21,7 @@
 		8A51F59E27ABEB1E002BF56D /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A51F59D27ABEB1E002BF56D /* Color.swift */; };
 		8A51F5A027ABECA1002BF56D /* ColorCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A51F59F27ABECA1002BF56D /* ColorCollectionViewCell.swift */; };
 		8A5AB80427ACBB2D00BD1190 /* DrawingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A5AB80327ACBB2D00BD1190 /* DrawingViewController.swift */; };
+		8A5AB80627AD40B600BD1190 /* ColorSelectDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A5AB80527AD40B600BD1190 /* ColorSelectDelegate.swift */; };
 		8ACD5B0D27525D890068AB70 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8ACD5B0C27525D890068AB70 /* AppDelegate.swift */; };
 		8ACD5B0F27525D890068AB70 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8ACD5B0E27525D890068AB70 /* SceneDelegate.swift */; };
 		8ACD5B1127525D890068AB70 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8ACD5B1027525D890068AB70 /* ViewController.swift */; };
@@ -67,6 +68,7 @@
 		8A51F59F27ABECA1002BF56D /* ColorCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorCollectionViewCell.swift; sourceTree = "<group>"; };
 		8A51F5A127ABF2B9002BF56D /* Lucas Learning.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Lucas Learning.entitlements"; sourceTree = "<group>"; };
 		8A5AB80327ACBB2D00BD1190 /* DrawingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrawingViewController.swift; sourceTree = "<group>"; };
+		8A5AB80527AD40B600BD1190 /* ColorSelectDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorSelectDelegate.swift; sourceTree = "<group>"; };
 		8ACD5B0927525D890068AB70 /* Lucas Learning.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Lucas Learning.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8ACD5B0C27525D890068AB70 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8ACD5B0E27525D890068AB70 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -165,6 +167,7 @@
 				8ACD5B1527525D8B0068AB70 /* Assets.xcassets */,
 				8ACD5B1727525D8B0068AB70 /* LaunchScreen.storyboard */,
 				8ACD5B1A27525D8B0068AB70 /* Info.plist */,
+				8A5AB80527AD40B600BD1190 /* ColorSelectDelegate.swift */,
 			);
 			path = "Lucas Learning";
 			sourceTree = "<group>";
@@ -346,6 +349,7 @@
 				8A3521FA275336BB007DFFC1 /* Contact.swift in Sources */,
 				8A0FC14027AA8F6A00D67195 /* FeatureCollectionViewCell.swift in Sources */,
 				8ACD5B0D27525D890068AB70 /* AppDelegate.swift in Sources */,
+				8A5AB80627AD40B600BD1190 /* ColorSelectDelegate.swift in Sources */,
 				8A031F59275267EB0014D43C /* NumbersViewController.swift in Sources */,
 				8A0FC13C27AA832900D67195 /* HomeCollectionViewController.swift in Sources */,
 				8ACD5B0F27525D890068AB70 /* SceneDelegate.swift in Sources */,

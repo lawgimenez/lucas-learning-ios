@@ -21,9 +21,6 @@ class TypingViewController: UIViewController {
         inputTextView.layer.cornerRadius = 6
         clearButton.layer.cornerRadius = 6
         speakButton.layer.cornerRadius = 6
-        view.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(dismissKeyboard)))
-        let dismissKeyboardBarButtonItem = UIBarButtonItem(image: UIImage(systemName: "keyboard.chevron.compact.down"), style: .plain, target: self, action: #selector(dismissKeyboard))
-        navigationItem.rightBarButtonItem = dismissKeyboardBarButtonItem
         title = "Typing"
     }
     
@@ -37,10 +34,6 @@ class TypingViewController: UIViewController {
         } else {
             speak(text: "Please type in the input box.")
         }
-    }
-    
-    @objc func dismissKeyboard() {
-        view.endEditing(true)
     }
     
     private func speak(text: String) {

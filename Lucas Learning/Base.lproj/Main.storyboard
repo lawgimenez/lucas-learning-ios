@@ -267,7 +267,7 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="QVG-fw-RHs">
-                                                    <rect key="frame" x="24" y="8" width="80" height="83"/>
+                                                    <rect key="frame" x="24" y="8" width="80" height="80"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="80" id="dDs-7h-3rV"/>
                                                         <constraint firstAttribute="width" constant="80" id="vWn-3U-Db7"/>
@@ -288,7 +288,7 @@
                                                 <constraint firstItem="QVG-fw-RHs" firstAttribute="centerX" secondItem="KXh-zO-WZ8" secondAttribute="centerX" id="9i8-o8-Kce"/>
                                                 <constraint firstItem="wad-06-FhS" firstAttribute="leading" secondItem="KXh-zO-WZ8" secondAttribute="leading" constant="8" id="AM6-Fx-sWW"/>
                                                 <constraint firstAttribute="trailing" secondItem="wad-06-FhS" secondAttribute="trailing" constant="8" id="CBS-oJ-qUC"/>
-                                                <constraint firstItem="wad-06-FhS" firstAttribute="top" secondItem="QVG-fw-RHs" secondAttribute="bottom" constant="8" symbolic="YES" id="IUh-Yo-kT5"/>
+                                                <constraint firstItem="wad-06-FhS" firstAttribute="top" secondItem="QVG-fw-RHs" secondAttribute="bottom" constant="11" id="IUh-Yo-kT5"/>
                                                 <constraint firstAttribute="bottom" secondItem="wad-06-FhS" secondAttribute="bottom" constant="8" id="mJg-ob-Zl3"/>
                                             </constraints>
                                         </collectionViewCellContentView>

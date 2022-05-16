@@ -24,7 +24,7 @@ class NumbersViewController: UIViewController {
 extension NumbersViewController: UICollectionViewDataSource {
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 20
+        return 200
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
@@ -54,11 +54,11 @@ extension NumbersViewController: UICollectionViewDelegate {
 extension NumbersViewController: UICollectionViewDelegateFlowLayout {
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-        let width = collectionView.bounds.width - 25
+        let width = collectionView.bounds.width - 5
         return CGSize(width: width / 5, height: 100)
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, insetForSectionAt section: Int) -> UIEdgeInsets {
-        return UIEdgeInsets(top: 8, left: 4, bottom: 8, right: 4)
+        return UIEdgeInsets(top: 4, left: 4, bottom: 4, right: 4)
     }
 }

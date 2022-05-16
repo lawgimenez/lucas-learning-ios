@@ -7,8 +7,9 @@
 
 import UIKit
 
-class Contact {
+struct Contact {
     
-    var name: String?
-    var image: UIImage?
+    let name: String?
+    let speechName: String?
+    let image: UIImage?
 }

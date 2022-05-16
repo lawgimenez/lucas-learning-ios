@@ -16,7 +16,8 @@ class HomeCollectionViewController: UICollectionViewController, UICollectionView
         Feature(name: "Typing", desc: "Listen to the letters in the alphabet.", icon: UIImage(systemName: "keyboard")!, colorTheme: .brown),
         Feature(name: "Numbers", desc: "Listen to the letters in the alphabet.", icon: UIImage(systemName: "number")!, colorTheme: .darkGray),
         Feature(name: "Colors", desc: "Listen to the letters in the alphabet.", icon: UIImage(systemName: "paintpalette.fill")!, colorTheme: .purple),
-        Feature(name: "Drawing", desc: "Listen to the letters in the alphabet.", icon: UIImage(systemName: "hand.draw")!, colorTheme: .magenta)
+        Feature(name: "Drawing", desc: "Listen to the letters in the alphabet.", icon: UIImage(systemName: "hand.draw")!, colorTheme: .magenta),
+        Feature(name: "Family", desc: "Listen to the letters in the alphabet.", icon: UIImage(systemName: "person.3.sequence")!, colorTheme: .green)
     ]
     
     override func viewDidLoad() {
@@ -57,6 +58,9 @@ class HomeCollectionViewController: UICollectionViewController, UICollectionView
         } else if indexPath.row == 4 {
             let drawingViewController = storyboard?.instantiateViewController(withIdentifier: "drawing") as! DrawingViewController
             navigationController?.pushViewController(drawingViewController, animated: true)
+        } else if indexPath.row == 5 {
+            let callViewController = storyboard?.instantiateViewController(withIdentifier: "call") as! CallViewController
+            navigationController?.pushViewController(callViewController, animated: true)
         }
     }
     

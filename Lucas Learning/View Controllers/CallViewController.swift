@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import AVFoundation
 
 class CallViewController: UIViewController {
     
@@ -37,6 +38,19 @@ extension CallViewController: UICollectionViewDataSource {
         callCollectionViewCell.avatarImageView.clipsToBounds = true
         callCollectionViewCell.nameLabel.text = arrayContacts[indexPath.row].name
         return callCollectionViewCell
+    }
+}
+
+extension CallViewController: UICollectionViewDelegate {
+    
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        let name = arrayContacts[indexPath.row].speechName
+        let utterance = AVSpeechUtterance(string: name!)
+        utterance.voice = AVSpeechSynthesisVoice(language: "en-US")
+        utterance.rate = 0.5
+        utterance.pitchMultiplier = 2.5
+        let synthesizer = AVSpeechSynthesizer()
+        synthesizer.speak(utterance)
     }
 }
 

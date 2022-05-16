@@ -17,7 +17,7 @@ class HomeCollectionViewController: UICollectionViewController, UICollectionView
         Feature(name: "Numbers", desc: "Listen to the letters in the alphabet.", icon: UIImage(systemName: "number")!, colorTheme: .darkGray),
         Feature(name: "Colors", desc: "Listen to the letters in the alphabet.", icon: UIImage(systemName: "paintpalette.fill")!, colorTheme: .purple),
         Feature(name: "Drawing", desc: "Listen to the letters in the alphabet.", icon: UIImage(systemName: "hand.draw")!, colorTheme: .magenta),
-        Feature(name: "Family", desc: "Listen to the letters in the alphabet.", icon: UIImage(systemName: "person.3.sequence")!, colorTheme: .green)
+        Feature(name: "Family", desc: "Listen to the letters in the alphabet.", icon: UIImage(systemName: "person.3.sequence")!, colorTheme: .red)
     ]
     
     override func viewDidLoad() {

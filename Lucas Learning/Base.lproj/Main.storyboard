@@ -181,10 +181,10 @@
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kh0-uV-oMR">
-                                <rect key="frame" x="32" y="68" width="350" height="45"/>
+                                <rect key="frame" x="32" y="68" width="350" height="50"/>
                                 <color key="backgroundColor" systemColor="systemGreenColor"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="45" id="scb-Tr-xci"/>
+                                    <constraint firstAttribute="height" constant="50" id="scb-Tr-xci"/>
                                 </constraints>
                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="8" maxY="0.0"/>
                                 <state key="normal" title="Speak">
@@ -201,10 +201,10 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="40M-xv-sGx">
-                                <rect key="frame" x="32" y="129" width="350" height="45"/>
+                                <rect key="frame" x="32" y="129" width="350" height="50"/>
                                 <color key="backgroundColor" red="0.36862745099999999" green="0.18039215689999999" blue="0.72941176470000002" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="45" id="rWS-OC-ltD"/>
+                                    <constraint firstAttribute="height" constant="50" id="rWS-OC-ltD"/>
                                 </constraints>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Clear" imagePadding="8" cornerStyle="fixed">
@@ -225,10 +225,10 @@
                             <constraint firstItem="NDn-H8-eGC" firstAttribute="trailing" secondItem="GFp-RH-y0B" secondAttribute="trailing" constant="16" id="aeW-tz-Zy3"/>
                             <constraint firstItem="kh0-uV-oMR" firstAttribute="leading" secondItem="NDn-H8-eGC" secondAttribute="leading" constant="32" id="ang-z3-QNp"/>
                             <constraint firstItem="NDn-H8-eGC" firstAttribute="trailing" secondItem="kh0-uV-oMR" secondAttribute="trailing" constant="32" id="gtX-6K-nFQ"/>
-                            <constraint firstItem="40M-xv-sGx" firstAttribute="top" secondItem="kh0-uV-oMR" secondAttribute="bottom" constant="16" id="iVz-3p-G6c"/>
+                            <constraint firstItem="40M-xv-sGx" firstAttribute="top" secondItem="kh0-uV-oMR" secondAttribute="bottom" constant="11" id="iVz-3p-G6c"/>
                             <constraint firstItem="40M-xv-sGx" firstAttribute="leading" secondItem="NDn-H8-eGC" secondAttribute="leading" constant="32" id="iXJ-jL-bkF"/>
                             <constraint firstItem="GFp-RH-y0B" firstAttribute="leading" secondItem="NDn-H8-eGC" secondAttribute="leading" constant="16" id="mwW-1D-gC6"/>
-                            <constraint firstItem="GFp-RH-y0B" firstAttribute="top" secondItem="40M-xv-sGx" secondAttribute="bottom" constant="24" id="rpk-dj-9fV"/>
+                            <constraint firstItem="GFp-RH-y0B" firstAttribute="top" secondItem="40M-xv-sGx" secondAttribute="bottom" constant="19" id="rpk-dj-9fV"/>
                         </constraints>
                     </view>
                     <connections>

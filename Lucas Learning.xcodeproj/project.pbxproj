@@ -534,7 +534,7 @@
 				CODE_SIGN_ENTITLEMENTS = "Lucas Learning/Lucas Learning.entitlements";
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 5;
+				CURRENT_PROJECT_VERSION = 6;
 				DEVELOPMENT_TEAM = ENJ8MS4EMS;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "Lucas Learning/Info.plist";
@@ -550,7 +550,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 0.1.4;
+				MARKETING_VERSION = 0.1.5;
 				PRODUCT_BUNDLE_IDENTIFIER = lwgmnz.me.lucaslearning;
 				"PRODUCT_BUNDLE_IDENTIFIER[sdk=macosx*]" = "";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -573,7 +573,7 @@
 				CODE_SIGN_IDENTITY = "Apple Development";
 				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 5;
+				CURRENT_PROJECT_VERSION = 6;
 				DEVELOPMENT_TEAM = ENJ8MS4EMS;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "Lucas Learning/Info.plist";
@@ -589,7 +589,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 0.1.4;
+				MARKETING_VERSION = 0.1.5;
 				PRODUCT_BUNDLE_IDENTIFIER = me.lwgmnz.lucaslearning;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
